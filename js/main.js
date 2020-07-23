@@ -36,7 +36,9 @@ $('.team-tabs__header-item').on('click', function () {
    $('.team-tabs__content').find(`[data-tab = ${id}]`).addClass('active')
 })
 // menu 
+let blockDocument = false;
 $('.burger').on('click', () => {
    $('.main-nav').toggleClass('main-nav--active')
    $('.header__btn').toggleClass('header__btn--active')
+   $('body').toggleClass('hide-scroll')
 })
